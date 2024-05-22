@@ -1,0 +1,41 @@
+{
+    "db": {
+        "adapter": "${DB_ADAPTER}",
+        "params": {
+            "host": "${DB_HOST}",
+            "port": "${DB_PORT}",
+            "username": "${DB_USERNAME}",
+            "password": "${DB_PASSWORD}",
+            "stage_dir": "${DB_STAGE_DIR}"
+        },
+        "database": "${DB_DATABASE}"
+    },
+    "dbs": {},
+    "app": {
+        "compression": "gzip",
+        "seed": 42,
+        "env": "${APP_ENV}",
+        "verbose": "${APP_VERBOSE}",
+        "queue": "${APP_QUEUE}"
+    },
+    "loc": {
+		"timezone": "${LOC_TIMEZONE}"
+	},
+    "aws": {
+        "key": "${AWS_KEY}",
+        "secret": "${AWS_SECRET}",
+        "region": "${AWS_REGION}"
+    },
+    "s3": {
+        "bucket": "${S3_BUCKET}"
+    },
+    "cwl": {
+        "group": "${CWL_GROUP}"
+    },
+    "pushover": {
+        "url": "https://api.pushover.net/1",
+        "user": "${PUSHOVER_USER}",
+        "token": "${PUSHOVER_TOKEN}",
+        "subject": "ManyThings"
+    }
+}

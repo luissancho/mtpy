@@ -1,0 +1,13 @@
+/files/
+/log/
+
+__pycache__/
+nbproject/
+venv/
+.ipynb_checkpoints/
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+env.*
+*.env
