@@ -1,8 +1,8 @@
-# MTPy ETL Framework
+# MTpy ETL Framework
 
 ## Description
 
-MTPy is a Python framework that provides a simple and intuitive interface for defining and running data pipelines. It is designed to be automatically deployed to the cloud using Docker.
+MTpy is a Python framework that provides a simple and intuitive interface for defining and running data pipelines. It is designed to be automatically deployed to the cloud using Docker.
 
 ## Fundamental Concepts
 
@@ -252,17 +252,17 @@ This will run all the pipelines of the `website` job, executing all the stages w
 
 ## Deployment
 
-MTPy is designed to be deployed to the cloud using Docker. The following steps will guide you through the process of deploying MTPy to the cloud.
+MTpy is designed to be deployed to the cloud using Docker. The following steps will guide you through the process of deploying MTpy to the cloud.
 
 ### Docker image build and run
 
-In order to build a Docker image of the MTPy project, you need to run the following command in the project root folder:
+In order to build a Docker image of the MTpy project, you need to run the following command in the project root folder:
 
 ```bash
 docker build -f ./Dockerfile -t mtpy .
 ```
 
-This will create a Docker image of the MTPy project with the tag `mtpy`.
+This will create a Docker image of the MTpy project with the tag `mtpy`.
 
 Then, you can run the Docker image with the following command:
 
@@ -270,11 +270,11 @@ Then, you can run the Docker image with the following command:
 docker run -d -p 8042:8042 --env-file=.env mtpy
 ```
 
-This will run the MTPy Docker image in a detached mode, exposing the API on port 8042.
+This will run the MTpy Docker image in a detached mode, exposing the API on port 8042.
 
 ### Configuration
 
-The `.env` file contains the environment variables needed to run the MTPy project, such as the database connection strings, the RabbitMQ broker URL, etc. The following environment variables must be set in order to run the framework:
+The `.env` file contains the environment variables needed to run the MTpy project, such as the database connection strings, the RabbitMQ broker URL, etc. The following environment variables must be set in order to run the framework:
 
 - `APP_ENV`: Environment name, default is `loc`.
 - `APP_VERBOSE`: Verbose level, default is 1.
